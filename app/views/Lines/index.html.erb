@@ -1,0 +1,9 @@
+<h1>Lines</h1>
+<table>
+<%if @lines
+  @lines.each do |t| %>
+     <tr>
+         <td>  <a href="<%= lines_path %>/<%= t.id %>"><%= t.train %> </a> </td>
+         <td><%= t.color %></td>
+         <td><%= t.borough%> </td>
+     </tr>
